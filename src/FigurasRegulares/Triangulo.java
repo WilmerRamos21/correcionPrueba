@@ -2,39 +2,39 @@ package FigurasRegulares;
 
 public class Triangulo {
     //Atributos
-    private double ladoBaseTriangulo;
-    private double ladosAltoTriangulo;
+    private double baseTriangulo;
+    private double ladoTriangulo;
     private double alturaTriangulo;
     //Constructor
-    public Triangulo(double ladoBaseTriangulo, double ladosAltoTriangulo, double alturaTriangulo){
-        this.ladoBaseTriangulo = ladoBaseTriangulo;
-        this.ladosAltoTriangulo = ladosAltoTriangulo;
+    public Triangulo(double baseTriangulo, double ladoTriangulo, double alturaTriangulo){
+        this.baseTriangulo = baseTriangulo;
+        this.ladoTriangulo = ladoTriangulo;
         this.alturaTriangulo = alturaTriangulo;
     }
     //Constructor Vacio
     public Triangulo(){}
     //Setters
-    public void establecerLadoBase(double ladoBAse){
-        this.ladoBaseTriangulo = ladoBAse;}
-    public void establecerLadosAlto(double ladosAlto){
-        this.ladosAltoTriangulo = ladosAlto;}
+    public void establecerBaseTriangulo(double baseTriangulo){
+        this.baseTriangulo = baseTriangulo;}
+    public void establecerLadoTriangulo(double ladoTriangulo){
+        this.ladoTriangulo = ladoTriangulo;}
     public void establecerAltura(double altura){
         this.alturaTriangulo = altura;}
     //Getters
-    private double obtenerLadoBase(){return ladoBaseTriangulo;}
-    private double obtenerLadosAlto(){return ladosAltoTriangulo;}
+    private double obtenerBaseTriangulo(){return baseTriangulo;}
+    private double obtenerLadoTriangulo(){return ladoTriangulo;}
     private double obtenerAltura(){return alturaTriangulo;}
     //Perimetro
-    public Double perimetroTriangulo(){
+    public double perimetroTriangulo(){
         return ((ladosAltoTriangulo*2)+ladoBaseTriangulo);}
     //Area
-    public Double areaTriangulo(){
+    public double areaTriangulo(){
         return ((ladoBaseTriangulo*alturaTriangulo)/2);}
     //Metodo Personalizado
     public void imprimirDatosTriangulo(){
     System.out.println("--- Triangulo Equilatero---");
-    System.out.println("Lado base: "+obtenerLadoBase());
-    System.out.println("Lados alto: "+obtenerLadosAlto());
+    System.out.println("Lado base: "+obtenerBaseTriangulo());
+    System.out.println("Lados alto: "+obtenerLadoTriangulo());
     System.out.println("Altura: "+obtenerAltura());
     System.out.println("Perimetro: "+perimetroTriangulo());
     System.out.println("Area: "+areaTriangulo());
