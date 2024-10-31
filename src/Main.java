@@ -27,17 +27,17 @@ public class Main {
         Circulo circulo1 = new Circulo();
         System.out.println("--- Circulo --- ");
         System.out.println("Ingrese la medida del radio: ");
-        float radio = (float) scanner.nextDouble();
+        double radio = scanner.nextDouble();
         circulo1.establecerRadio(radio);
         //Triangulo
         Triangulo triangulo1 = new Triangulo();
         System.out.println("--- Triangulo --- ");
         System.out.println("Ingrese la medida del lado base: ");
-        double ladoBaseTriangulo = scanner.nextDouble();
-        triangulo1.establecerLadoBase(ladoBaseTriangulo);
+        double baseTriangulo = scanner.nextDouble();
+        triangulo1.establecerBaseTriangulo(baseTriangulo);
         System.out.println("Ingrese la medida del lado alto: ");
-        double ladosAltoTriangulo = scanner.nextDouble();
-        triangulo1.establecerLadosAlto(ladosAltoTriangulo);
+        double ladoTriangulo = scanner.nextDouble();
+        triangulo1.establecerLadoTriangulo(ladoTriangulo);
         System.out.println("Ingrese la altura: ");
         double alturaTriangulo = scanner.nextDouble();
         triangulo1.establecerAltura(alturaTriangulo);
@@ -49,7 +49,8 @@ public class Main {
         triangulo1.imprimirDatosTriangulo();
 
         //Suma total de Areas
-        System.out.println("Suma de todas las areas de las figuras regulares: "+String.format("%.2f",cuadrado1.area()+rectangulo1.areaRectangulo()+circulo1.areaCirculo()+triangulo1.areaTriangulo()));
+        double sumaAreas = cuadrado1.area() + rectangulo1.areaRectangulo() + circulo1.areaCirculo() + triangulo1.areaTriangulo();
+        System.out.println("Suma de todas las areas de las figuras regulares: "+String.format("%.2f",sumaAreas));
 
 
     }
