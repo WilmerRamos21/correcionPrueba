@@ -7,7 +7,7 @@ public class Rectangulo {
     //Constructor
     public Rectangulo(double ladoBase, double ladoAlto){
         this.ladoBase = ladoBase;
-        this.ladoAlto = ladoBase;
+        this.ladoAlto = ladoAlto;
     }
     //Constructor Vacio
     public Rectangulo(){}
@@ -20,10 +20,10 @@ public class Rectangulo {
     private double obtenerLadoBase(){return ladoBase;}
     private double obtenerLadoAlto(){return ladoAlto;}
     //Perimetro
-    public Double perimetroRectangulo(){
+    public double perimetroRectangulo(){
         return ((ladoBase*2)+(ladoAlto*2));}
     //Area
-    public Double areaRectangulo(){
+    public double areaRectangulo(){
         return (ladoBase*ladoAlto);}
     //Metodo personalizado
     public void imprimirDatosRectangulo(){
