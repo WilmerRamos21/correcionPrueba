@@ -24,19 +24,21 @@ public class Circulo {
     }
 
     //Perimetro
-    public Double perimetroCirculo() {
+    public double perimetroCirculo() {
         return ((2 * Math.PI) * radio);
     }
 
     //Area
-    public Double areaCirculo() {
+    public double areaCirculo() {
         return (Math.PI * Math.pow(radio, 2));
     }
     //Metodo Personalizado
         public void imprimirDatosCirculo () {
+            System.out.ptintln(" "):
             System.out.println("--- Circulo ---");
             System.out.println("Radio: " + obtenerRadio());
             System.out.println("Perimetro: " + String.format("%.2f",perimetroCirculo()));
             System.out.println("Area: " + String.format("%.2f",areaCirculo()));
+            System.out.println(" ");
         }
     }
