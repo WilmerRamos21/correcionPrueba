@@ -31,7 +31,7 @@ public class Main {
         circulo1.establecerRadio(radio);
         //Triangulo
         Triangulo triangulo1 = new Triangulo();
-        System.out.println("--- Triangulo --- ");
+        System.out.println("--- Triangulo Isósceles --- ");
         System.out.println("Ingrese la medida del lado base: ");
         double baseTriangulo = scanner.nextDouble();
         triangulo1.establecerBaseTriangulo(baseTriangulo);
