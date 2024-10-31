@@ -32,7 +32,7 @@ public class Triangulo {
         return ((baseTriangulo*alturaTriangulo)/2);}
     //Metodo Personalizado
     public void imprimirDatosTriangulo(){
-    System.out.println("--- Triangulo Equilatero---");
+    System.out.println("--- Triangulo isósceles ---");
     System.out.println("Lado base: "+obtenerBaseTriangulo());
     System.out.println("Lados alto: "+obtenerLadoTriangulo());
     System.out.println("Altura: "+obtenerAltura());
