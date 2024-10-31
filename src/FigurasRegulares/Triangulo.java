@@ -26,10 +26,10 @@ public class Triangulo {
     private double obtenerAltura(){return alturaTriangulo;}
     //Perimetro
     public double perimetroTriangulo(){
-        return ((ladosAltoTriangulo*2)+ladoBaseTriangulo);}
+        return ((ladoTriangulo*2)+baseTriangulo);}
     //Area
     public double areaTriangulo(){
-        return ((ladoBaseTriangulo*alturaTriangulo)/2);}
+        return ((baseTriangulo*alturaTriangulo)/2);}
     //Metodo Personalizado
     public void imprimirDatosTriangulo(){
     System.out.println("--- Triangulo Equilatero---");
